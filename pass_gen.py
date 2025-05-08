@@ -22,7 +22,7 @@ def is_int(input):
 
 def pwd_gen(pwd_length):
 
-    return ''.join([random.choice(symbols) for _ in range(int(pwd_length))])
+    return ''.join([random.SystemRandom().choice(symbols) for _ in range(int(pwd_length))])
 
 def pwd_list_gen(pwd_length, pwd_quantity):
 
